@@ -1,0 +1,126 @@
+@import url('https://fonts.google.com/specimen/Khula?query=khula:wght@300;400;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: whitesmoke;
+    font-family: "khula", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(39, 39, 44), rgb(56, 60, 85));
+}
+.title {
+    line-height: 1.4;
+    font-size: 4rem;
+}
+.start {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: rgb(138, 240, 247);
+    }
+}
+.time-list {
+    list-style: none;
+    display: flex;
+    &__item {
+        margin: 10px;
+    }
+}
+.button {
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    &:hover {
+        color: rgb(138, 240, 247);
+        border: 2px solid rgb(138, 240, 247);
+    }
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(56, 60, 85);
+    background: linear-gradient(45deg, rgb(39, 39, 44), rgb(56, 60, 85));
+    box-shadow: 0px 1px 2px 0px rgba(167, 255, 255, 0.7),
+                1px 2px 4px 0px rgba(167, 255, 255, 0.7),
+                2px 4px 8px 0px rgba(167, 255, 255, 0.7),
+                2px 4px 16px 0px rgba(167, 255, 255, 0.7);
+    border-radius: 3rem;
+}
+.modal {
+    position: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        max-width: 500px;
+        height: 50%;
+        max-height: 350px;
+        background: linear-gradient(45deg, rgb(39, 39, 44), rgb(56, 60, 85));
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0px 1px 2px 0px rgba(167, 255, 255, 0.7),
+                1px 2px 4px 0px rgba(167, 255, 255, 0.7),
+                2px 4px 8px 0px rgba(167, 255, 255, 0.7),
+                2px 4px 16px 0px rgba(167, 255, 255, 0.7);
+        &__controls {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
+.modal.open {
+    display: flex;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(167, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
