@@ -16,7 +16,7 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 2rem;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .card {
@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    transition: margin 0.5s ease-in-out;
     background: linear-gradient(45deg, rgb(39, 39, 44), rgb(56, 60, 85));
 }
 .title {
@@ -118,6 +119,11 @@ body {
     cursor: pointer;
 }
 
+// ДЛЯ JS КОД
+
+.card.up {
+    margin-top: -100vh;
+}
 
 
 
