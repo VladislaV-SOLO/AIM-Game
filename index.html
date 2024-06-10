@@ -17,7 +17,7 @@
         <h2 class="title sub-title">Выберите время</h2>
         <ul class="time-list" id="time-list">
             <li class="time-list__item">
-                <button class="time-list__item button" data-time="10">10 sec</button>
+                <button class="time-list__item button" data-time="2">10 sec</button>
             </li>
             <li class="time-list__item">
                 <button class="time-list__item button" data-time="15">15 sec</button>
@@ -33,20 +33,22 @@
 
     <section class="card">
         <h2 class="title">Осталось: <span id="time">00:00</span></h2>
-        <div class="board" id="board"></div>
+        <div class="board" id="board">
+            <!-- <div class="circle"></div> -->
+        </div>
     </section>
 
     <div class="modal" id="modal">
         <div class="modal__content">
-            <p class="score">Ваш счёт: <span id="score">57</span></p>
+            <p class="score">Ваш счёт: <span id="score"></span></p>
             <div class="modal__controls">
-                <button class="modal__btn button">Начать заново</button>
-                <button class="modal__btn button">Вернуться на главную</button>
+                <button class="modal__btn button" id="restart">Начать заново</button>
+                <button class="modal__btn button" id="cancel">Вернуться на главную</button>
             </div>
         </div>
     </div>
 
-    <div class="circle"></div>
+    <!-- <div class="circle"></div> -->
 
     <script src="./style.js"></script>
 </body>
